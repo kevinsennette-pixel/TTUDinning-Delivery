@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - TTU Dining Delivery</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>TTU Dining Delivery</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="student-dashboard.html">Order Food</a></li>
+                <li><a href="projects.html">Deliver</a></li>
+                <li><a href="company-dashboard.html">Admin</a></li>
+                <li><a href="#profile" class="btn-login">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="dashboard-main">
+        <div class="container">
+            <div class="dashboard-header">
+                <div class="company-header">
+                    <div class="company-info">
+                        <div class="company-logo-large"></div>
+                        <div>
+                            <h2>Platform Admin Dashboard</h2>
+                            <p class="company-tagline">Manage dining halls, deliveries, and operations</p>
+                        </div>
+                    </div>
+                    <div class="quick-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">47</span>
+                            <span class="stat-label">Active Orders</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">23</span>
+                            <span class="stat-label">Active Deliverers</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Dining Halls</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company-grid dashboard-grid">
+                <div class="main-content">
+                    <section class="post-project-section">
+                        <h3>Add Menu Item</h3>
+                        <form class="project-form">
+                            <div class="form-group">
+                                <label for="item-name">Item Name</label>
+                                <input type="text" id="item-name" name="item-name" placeholder="e.g., Chicken Tender Basket" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="item-description">Description</label>
+                                <textarea id="item-description" name="item-description" placeholder="Describe the menu item" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Dining Hall</label>
+                                <div class="skills-checkboxes">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="dining-hall" value="commons">
+                                        The Commons
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="dining-hall" value="fresh-plate">
+                                        Fresh Plate
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="dining-hall" value="sams">
+                                        Sam's Place
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="dining-hall" value="olreds">
+                                        Ol' Red's
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="category">Category</label>
+                                    <select id="category" name="category" required>
+                                        <option value="">Select Category</option>
+                                        <option value="entree">Entree</option>
+                                        <option value="side">Side</option>
+                                        <option value="drink">Drink</option>
+                                        <option value="dessert">Dessert</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="price">Price</label>
+                                    <input type="number" id="price" name="price" placeholder="8.99" min="0" step="0.01" required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-full">Add Item</button>
+                        </form>
+                    </section>
+
+                    <section class="posted-projects">
+                        <h3>Active Deliveries</h3>
+
+                        <div class="project-card posted">
+                            <div class="project-info">
+                                <h4>Order #2847 - The Commons</h4>
+                                <div class="applications-count">
+                                    Deliverer: <strong>Sarah Martinez</strong>
+                                </div>
+                                <p class="posted-date">Pickup: 6:45 PM | Delivery: Chitwood Hall</p>
+                            </div>
+                            <span class="project-status active">In Transit</span>
+                            <button class="btn btn-primary btn-small">View</button>
+                        </div>
+
+                        <div class="project-card posted">
+                            <div class="project-info">
+                                <h4>Order #2846 - Fresh Plate</h4>
+                                <div class="applications-count">
+                                    Deliverer: <strong>Michael Chen</strong>
+                                </div>
+                                <p class="posted-date">Pickup: 6:50 PM | Delivery: Stangel Hall</p>
+                            </div>
+                            <span class="project-status pending">Preparing</span>
+                            <button class="btn btn-primary btn-small">View</button>
+                        </div>
+
+                        <div class="project-card posted">
+                            <div class="project-info">
+                                <h4>Order #2845 - Sam's Place</h4>
+                                <div class="applications-count">
+                                    Deliverer: <strong>Emma Rodriguez</strong>
+                                </div>
+                                <p class="posted-date">Delivered: 6:35 PM | Bledsoe Hall</p>
+                            </div>
+                            <span class="project-status closed">Completed</span>
+                            <button class="btn btn-secondary btn-small">View</button>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="recent-applications">
+                        <h3>Dining Hall Status</h3>
+
+                        <div class="application-card">
+                            <div class="applicant-info">
+                                <div class="applicant-avatar">TC</div>
+                                <div>
+                                    <h4>The Commons</h4>
+                                    <p class="applied-to">Main Campus</p>
+                                </div>
+                            </div>
+                            <div class="applicant-skills">
+                                <span class="skill-tag">Open</span>
+                                <span class="skill-tag">18 Orders</span>
+                            </div>
+                            <p class="application-date">Closes: 8:00 PM</p>
+                            <div class="application-actions">
+                                <button class="btn btn-outline btn-small btn-full">Manage</button>
+                            </div>
+                        </div>
+
+                        <div class="application-card">
+                            <div class="applicant-info">
+                                <div class="applicant-avatar">FP</div>
+                                <div>
+                                    <h4>Fresh Plate</h4>
+                                    <p class="applied-to">Student Union</p>
+                                </div>
+                            </div>
+                            <div class="applicant-skills">
+                                <span class="skill-tag">Open</span>
+                                <span class="skill-tag">12 Orders</span>
+                            </div>
+                            <p class="application-date">Closes: 9:00 PM</p>
+                            <div class="application-actions">
+                                <button class="btn btn-outline btn-small btn-full">Manage</button>
+                            </div>
+                        </div>
+
+                        <div class="application-card">
+                            <div class="applicant-info">
+                                <div class="applicant-avatar">SP</div>
+                                <div>
+                                    <h4>Sam's Place</h4>
+                                    <p class="applied-to">West Campus</p>
+                                </div>
+                            </div>
+                            <div class="applicant-skills">
+                                <span class="skill-tag">Open</span>
+                                <span class="skill-tag">9 Orders</span>
+                            </div>
+                            <p class="application-date">Closes: 10:00 PM</p>
+                            <div class="application-actions">
+                                <button class="btn btn-outline btn-small btn-full">Manage</button>
+                            </div>
+                        </div>
+
+                        <div class="application-card">
+                            <div class="applicant-info">
+                                <div class="applicant-avatar">OR</div>
+                                <div>
+                                    <h4>Ol' Red's</h4>
+                                    <p class="applied-to">Wiggins Complex</p>
+                                </div>
+                            </div>
+                            <div class="applicant-skills">
+                                <span class="skill-tag">Open</span>
+                                <span class="skill-tag">8 Orders</span>
+                            </div>
+                            <p class="application-date">Closes: 12:00 AM</p>
+                            <div class="application-actions">
+                                <button class="btn btn-outline btn-small btn-full">Manage</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#terms">Terms</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#contact">Contact</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <p class="copyright">&copy; 2025 TTU Dining Delivery</p>
+        </div>
+    </footer>
+</body>
+</html>

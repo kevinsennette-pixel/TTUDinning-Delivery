@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Jobs - TTU Dining Delivery</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>TTU Dining Delivery</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="student-dashboard.html">Order Food</a></li>
+                <li><a href="projects.html" aria-current="page">Deliver</a></li>
+                <li><a href="company-dashboard.html">Admin</a></li>
+                <li><a href="#profile" class="btn-login">Deliverer Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="projects-main">
+        <div class="container">
+            <div class="page-header">
+                <h2>Available Delivery Jobs</h2>
+                <p class="page-description">
+                    Accept delivery jobs and earn money while staying on campus. All deliveries are short walks between buildings.
+                </p>
+                <p class="project-count">Active Jobs: <strong>23</strong></p>
+            </div>
+
+            <div class="projects-layout">
+                <aside class="filters-sidebar">
+                    <h3>Filters</h3>
+
+                    <div class="filter-group">
+                        <label for="search">Search by Location</label>
+                        <input type="search" id="search" name="search" placeholder="Search dorms, buildings...">
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Pickup Location</h4>
+                        <div class="filter-checkboxes">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="pickup" value="commons">
+                                The Commons
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="pickup" value="fresh-plate">
+                                Fresh Plate
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="pickup" value="sams">
+                                Sam's Place
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="pickup" value="olreds">
+                                Ol' Reds
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Delivery Distance</h4>
+                        <div class="filter-radios">
+                            <label class="radio-label">
+                                <input type="radio" name="distance" value="close">
+                                Under 5 minutes
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="distance" value="medium">
+                                5-10 minutes
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="distance" value="far">
+                                10-15 minutes
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Payout Range</h4>
+                        <div class="compensation-inputs">
+                            <input type="number" placeholder="Min" min="0" value="3">
+                            <span class="range-separator">-</span>
+                            <input type="number" placeholder="Max" min="0" value="10">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-apply-filters">Apply Filters</button>
+                    <button class="btn btn-outline btn-clear-filters">Clear Filters</button>
+                </aside>
+
+                <div class="projects-listings">
+                    <div class="project-listing-card">
+                        <div class="card-header">
+                            <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">TC</div>
+                            <div>
+                                <h3>Chitwood Hall Delivery</h3>
+                                <p style="margin: 0; color: #2563eb; font-size: 0.9rem; font-weight: 500;">From: The Commons</p>
+                            </div>
+                        </div>
+                        <p>Pick up from The Commons and deliver to Chitwood Hall Room 215. Baja shrimp tacos order.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">5 min walk</span>
+                            <span class="skill-tag">1 item</span>
+                            <span class="skill-tag">Ready now</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="duration">Est. 8 minutes</span>
+                            <span style="font-weight: 600; color: #10b981;">$5.00</span>
+                        </div>
+                        <button class="btn btn-primary">Accept Job</button>
+                    </div>
+
+                    <div class="project-listing-card">
+                        <div class="card-header">
+                            <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">FP</div>
+                            <div>
+                                <h3>Library Buffet Check-In</h3>
+                                <p style="margin: 0; color: #2563eb; font-size: 0.9rem; font-weight: 500;">From: Fresh Plate</p>
+                            </div>
+                        </div>
+                        <p>Help student check in at Fresh Plate buffet entrance. Meet at library and walk to dining hall together.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">3 min walk</span>
+                            <span class="skill-tag">Escort</span>
+                            <span class="skill-tag">Ready in 5 min</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="duration">Est. 6 minutes</span>
+                            <span style="font-weight: 600; color: #10b981;">$4.00</span>
+                        </div>
+                        <button class="btn btn-primary">Accept Job</button>
+                    </div>
+
+                    <div class="project-listing-card">
+                        <div class="card-header">
+                            <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">SP</div>
+                            <div>
+                                <h3>Stangel Hall Delivery</h3>
+                                <p style="margin: 0; color: #2563eb; font-size: 0.9rem; font-weight: 500;">From: Sam's Place</p>
+                            </div>
+                        </div>
+                        <p>Beef fajita burrito delivery to Stangel Hall. Leave at front desk if student doesn't answer.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">7 min walk</span>
+                            <span class="skill-tag">1 item</span>
+                            <span class="skill-tag">Ready now</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="duration">Est. 10 minutes</span>
+                            <span style="font-weight: 600; color: #10b981;">$6.00</span>
+                        </div>
+                        <button class="btn btn-primary">Accept Job</button>
+                    </div>
+
+                    <div class="project-listing-card">
+                        <div class="card-header">
+                            <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">OR</div>
+                            <div>
+                                <h3>Horn Hall Late Night</h3>
+                                <p style="margin: 0; color: #2563eb; font-size: 0.9rem; font-weight: 500;">From: Ol' Red's</p>
+                            </div>
+                        </div>
+                        <p>Late night double bacon cheeseburger and crispy chicken sandwich delivery to Horn Hall.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">6 min walk</span>
+                            <span class="skill-tag">2 items</span>
+                            <span class="skill-tag">Ready in 10 min</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="duration">Est. 12 minutes</span>
+                            <span style="font-weight: 600; color: #10b981;">$7.50</span>
+                        </div>
+                        <button class="btn btn-primary">Accept Job</button>
+                    </div>
+
+                    <div class="project-listing-card">
+                        <div class="card-header">
+                            <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">TC</div>
+                            <div>
+                                <h3>Bledsoe Hall Quick Drop</h3>
+                                <p style="margin: 0; color: #2563eb; font-size: 0.9rem; font-weight: 500;">From: The Commons</p>
+                            </div>
+                        </div>
+                        <p>Quick delivery to Bledsoe Hall Room 104. Rice bowl order. Very close pickup and drop-off.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">4 min walk</span>
+                            <span class="skill-tag">1 item</span>
+                            <span class="skill-tag">Ready now</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="duration">Est. 7 minutes</span>
+                            <span style="font-weight: 600; color: #10b981;">$4.00</span>
+                        </div>
+                        <button class="btn btn-primary">Accept Job</button>
+                    </div>
+
+                    <div class="project-listing-card">
+                        <div class="card-header">
+                            <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">SP</div>
+                            <div>
+                                <h3>Engineering Key Study Area</h3>
+                                <p style="margin: 0; color: #2563eb; font-size: 0.9rem; font-weight: 500;">From: Sam's Place</p>
+                            </div>
+                        </div>
+                        <p>Deliver chicken carnitas nachos to Engineering Key study lounge. Customer studying for exam.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">8 min walk</span>
+                            <span class="skill-tag">1 item</span>
+                            <span class="skill-tag">Ready in 3 min</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="duration">Est. 11 minutes</span>
+                            <span style="font-weight: 600; color: #10b981;">$6.50</span>
+                        </div>
+                        <button class="btn btn-primary">Accept Job</button>
+                    </div>
+
+                    <div class="project-listing-card">
+                        <div class="card-header">
+                            <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">TC</div>
+                            <div>
+                                <h3>Murray Hall Group Order</h3>
+                                <p style="margin: 0; color: #2563eb; font-size: 0.9rem; font-weight: 500;">From: The Commons</p>
+                            </div>
+                        </div>
+                        <p>Larger order for Murray Hall study group. Multiple rice bowls and tacos. Will need carrier bag.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">9 min walk</span>
+                            <span class="skill-tag">4 items</span>
+                            <span class="skill-tag">Ready in 8 min</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="duration">Est. 15 minutes</span>
+                            <span style="font-weight: 600; color: #10b981;">$9.00</span>
+                        </div>
+                        <button class="btn btn-primary">Accept Job</button>
+                    </div>
+
+                    <div class="project-listing-card">
+                        <div class="card-header">
+                            <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">OR</div>
+                            <div>
+                                <h3>Rec Center Pickup</h3>
+                                <p style="margin: 0; color: #2563eb; font-size: 0.9rem; font-weight: 500;">From: Ol' Red's</p>
+                            </div>
+                        </div>
+                        <p>Crispy chicken sandwich delivery to Student Rec Center. Customer will be waiting at front entrance.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">6 min walk</span>
+                            <span class="skill-tag">1 item</span>
+                            <span class="skill-tag">Ready now</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="duration">Est. 9 minutes</span>
+                            <span style="font-weight: 600; color: #10b981;">$5.50</span>
+                        </div>
+                        <button class="btn btn-primary">Accept Job</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-btn">← Previous</button>
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <span class="page-ellipsis">...</span>
+                    <button class="page-number">5</button>
+                </div>
+                <button class="pagination-btn">Next →</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#terms">Terms of Service</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <p class="copyright">&copy; 2025 TTU Dining Delivery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
