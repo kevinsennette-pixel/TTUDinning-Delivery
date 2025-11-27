@@ -14,202 +14,91 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="student-dashboard.html" aria-current="page">Order Food</a></li>
-                <li><a href="projects.html">Deliver</a></li>
-                <li><a href="company-dashboard.html">Admin</a></li>
-                <li><a href="#cart" class="btn-login">Cart (2)</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#for-students">For Diners</a></li>
+                <li><a href="#for-deliverers">For Deliverers</a></li>
+                <li><a href="student-dashboard.html">Order Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="dashboard-main">
+    <section class="hero">
         <div class="container">
-            <div class="dashboard-header">
-                <div class="welcome-section">
-                    <h2>Select a Dining Hall</h2>
-                    <p>Choose from any Texas Tech dining location and browse their menu.</p>
-                </div>
-
-                <div class="quick-stats">
-                    <div class="stat-card">
-                        <span class="stat-number">$247.80</span>
-                        <span class="stat-label">Dining Dollars Balance</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">8</span>
-                        <span class="stat-label">Orders This Week</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">23</span>
-                        <span class="stat-label">Total Orders</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dashboard-grid">
-                <div class="main-content">
-                    <section class="active-projects">
-                        <h3>Available Dining Halls</h3>
-                        
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h4>The Commons</h4>
-                                <p class="company-name">Main Campus Dining</p>
-                            </div>
-                            <p>All-you-care-to-eat buffet with international cuisine, pizza station, grill, and salad bar.</p>
-                            <div class="project-meta">
-                                <span>Open Now</span>
-                                <span class="deadline">Closes: 8:00 PM</span>
-                            </div>
-                            <button class="btn btn-primary btn-small">View Menu</button>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h4>Fresh Plate</h4>
-                                <p class="company-name">Student Union</p>
-                            </div>
-                            <p>All-you-care-to-eat buffet. Check in early on the app to skip the line at the door.</p>
-                            <div class="project-meta">
-                                <span>Open Now</span>
-                                <span class="deadline">Closes: 9:00 PM</span>
-                            </div>
-                            <button class="btn btn-primary btn-small">Check In Now</button>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h4>Sam's Place</h4>
-                                <p class="company-name">West Campus</p>
-                            </div>
-                            <p>Quick-service dining with burgers, sandwiches, fries, and comfort food favorites.</p>
-                            <div class="project-meta">
-                                <span>Open Now</span>
-                                <span class="deadline">Closes: 10:00 PM</span>
-                            </div>
-                            <button class="btn btn-primary btn-small">View Menu</button>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h4>Ol' Red's</h4>
-                                <p class="company-name">Wiggins Complex</p>
-                            </div>
-                            <p>Late-night dining with burgers, sandwiches, and snacks. Perfect for study sessions.</p>
-                            <div class="project-meta">
-                                <span>Open Now</span>
-                                <span class="deadline">Closes: 12:00 AM</span>
-                            </div>
-                            <button class="btn btn-primary btn-small">View Menu</button>
-                        </div>
-                    </section>
-
-                    <section class="available-opportunities">
-                        <h3>Popular Items Nearby</h3>
-                        <div class="opportunities-grid">
-                            <div class="opportunity-card">
-                                <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">TC</div>
-                                <h4>Baja Shrimp Taco</h4>
-                                <p class="company">The Commons</p>
-                                <p>Fresh shrimp tacos with baja sauce and toppings.</p>
-                                <div class="skills-tags">
-                                    <span class="skill-tag">Entree</span>
-                                    <span class="skill-tag">Popular</span>
-                                </div>
-                                <div class="opportunity-meta">
-                                    <span class="duration">15-20 min</span>
-                                    <span class="compensation">$9.50</span>
-                                </div>
-                                <button class="btn btn-primary btn-full">Add to Cart</button>
-                            </div>
-
-                            <div class="opportunity-card">
-                                <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">FP</div>
-                                <h4>Fresh Plate Buffet</h4>
-                                <p class="company">Fresh Plate</p>
-                                <p>All-you-care-to-eat buffet access. Check in early to skip the line.</p>
-                                <div class="skills-tags">
-                                    <span class="skill-tag">Buffet</span>
-                                    <span class="skill-tag">Early Check-In</span>
-                                </div>
-                                <div class="opportunity-meta">
-                                    <span class="duration">Check-In</span>
-                                    <span class="compensation">$12.00</span>
-                                </div>
-                                <button class="btn btn-primary btn-full">Check In</button>
-                            </div>
-
-                            <div class="opportunity-card">
-                                <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">SP</div>
-                                <h4>Beef Fajita Burrito</h4>
-                                <p class="company">Sam's Place</p>
-                                <p>Grilled beef fajita with peppers, onions, rice, and beans wrapped in a tortilla.</p>
-                                <div class="skills-tags">
-                                    <span class="skill-tag">Signature</span>
-                                    <span class="skill-tag">Mexican</span>
-                                </div>
-                                <div class="opportunity-meta">
-                                    <span class="duration">15-20 min</span>
-                                    <span class="compensation">$10.99</span>
-                                </div>
-                                <button class="btn btn-primary btn-full">Add to Cart</button>
-                            </div>
-
-                            <div class="opportunity-card">
-                                <div style="width: 50px; height: 50px; background-color: #f9fafb; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280;">OR</div>
-                                <h4>Double Bacon Cheeseburger</h4>
-                                <p class="company">Ol' Red's</p>
-                                <p>Two beef patties with bacon, cheese, lettuce, and tomato on a toasted bun.</p>
-                                <div class="skills-tags">
-                                    <span class="skill-tag">Late Night</span>
-                                    <span class="skill-tag">Popular</span>
-                                </div>
-                                <div class="opportunity-meta">
-                                    <span class="duration">20-25 min</span>
-                                    <span class="compensation">$8.99</span>
-                                </div>
-                                <button class="btn btn-primary btn-full">Add to Cart</button>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <aside class="sidebar">
-                    <div class="profile-summary">
-                        <h3>Delivery Info</h3>
-                        <div class="profile-info">
-                            <div class="name">Current Location</div>
-                            <div class="major">Chitwood/Weymouth Hall</div>
-                        </div>
-
-                        <div class="skills-section">
-                            <h4>Delivery Time</h4>
-                            <p style="color: #10b981; font-weight: 600; font-size: 1.1rem;">15-25 minutes</p>
-                        </div>
-
-                        <div class="portfolio-links">
-                            <h4>Recent Orders</h4>
-                            <a href="#order1" class="portfolio-link">Rice Bowl - The Commons</a>
-                            <a href="#order2" class="portfolio-link">Burrito - Sam's Place</a>
-                            <a href="#order3" class="portfolio-link">Buffet Check-In - Fresh Plate</a>
-                        </div>
-
-                        <button class="btn btn-secondary btn-full">Change Location</button>
-                    </div>
-                </aside>
+            <h2>Texas Tech Dining Delivered to Your Dorm</h2>
+            <p class="hero-description">
+                Order from any dining hall using your dining dollars account. Skip the lines and get food delivered by fellow Red Raiders.
+            </p>
+            <div class="cta-buttons">
+                <a href="student-dashboard.html" class="btn btn-primary btn-large">Order Food Now</a>
+                <a href="projects.html" class="btn btn-secondary btn-large">Become a Deliverer</a>
             </div>
         </div>
-    </main>
+    </section>
+
+    <section class="value-propositions" id="for-students">
+        <div class="container">
+            <h2>Why Choose TTU Dining Delivery?</h2>
+            <div class="two-column">
+                <div class="column">
+                    <h3>For Diners</h3>
+                    <ul class="benefits-list">
+                        <li><strong>Use Your Dining Dollars:</strong> Pay with your dining dollars account - no cash needed.</li>
+                        <li><strong>Skip the Lines:</strong> Avoid long waits at dining halls during peak hours.</li>
+                        <li><strong>Convenient Delivery:</strong> Food delivered directly to your dorm or study spot.</li>
+                        <li><strong>Campus Safe:</strong> All deliverers are verified Texas Tech students.</li>
+                    </ul>
+                </div>
+
+                <div class="column" id="for-deliverers">
+                    <h3>For Deliverers</h3>
+                    <ul class="benefits-list">
+                        <li><strong>Flexible Schedule:</strong> Work whenever you want on your own time.</li>
+                        <li><strong>Stay on Campus:</strong> All deliveries are short walks around campus.</li>
+                        <li><strong>Easy Money:</strong> Earn money between classes without leaving TTU.</li>
+                        <li><strong>No Formal Shifts:</strong> Be your own boss and choose when to work.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse Menus</h3>
+                    <p>Check out what's available at The Commons, Fresh Plate, Sam's Place, Ol' Reds, and other dining halls.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Place Your Order</h3>
+                    <p>Add items to your cart and pay using your dining dollars account.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Matched</h3>
+                    <p>A nearby student deliverer accepts your order and picks it up from the dining hall.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Enjoy Your Meal</h3>
+                    <p>Track your delivery and receive fresh food at your location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="site-footer">
         <div class="container">
             <div class="footer-links">
-                <a href="#terms">Terms of Service</a>
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#contact">Contact Us</a>
+                <a href="#terms">Terms</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#contact">Contact</a>
                 <a href="#faq">FAQ</a>
             </div>
-            <p class="copyright">&copy; 2025 TTU Dining Delivery. All rights reserved.</p>
+            <p class="copyright">&copy; 2025 TTU Dining Delivery</p>
         </div>
     </footer>
 </body>
